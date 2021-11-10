@@ -16,5 +16,5 @@ app.use('/api',require('../mockServer/util/routerCompose'))
 const port = 3721
 app.listen(port, () => {
   console.log('mock server ready~~');
-  console.log('启动地址为:localhost:' + port );
+  console.log('启动地址为:localhost:' + port + '/api/' );
 })

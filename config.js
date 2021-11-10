@@ -19,12 +19,12 @@ const {
   increment, inc,        shuffle
 } = require('./mockServer/mocking/keys')
 
-// mock的项, 统一为上面key函数的调用
+/* 下方为配置入口, goods 和 users为示例 */ 
 module.exports = {
   // 配置成数组, 指定生成的数目
   goods:[
     () => ({
-      id: id(),
+      id: id(), // 要mock的数据项, 统一为mockjs中Random成员函数的调用,可以参照上方的key函数
       title:ctitle(),
       detail:cparagraph()
     }),
@@ -36,4 +36,5 @@ module.exports = {
     id: id(),
     name: cname()
   }),
+  
 }
